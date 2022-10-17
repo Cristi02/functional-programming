@@ -18,6 +18,7 @@ const objExemple = {
 };
 
 const deepClone = (input) => {
+    if (input === null) return;
     if (typeof input !== "object") return input;
 
     const newObject = Array.isArray(input) ? [] : {};
